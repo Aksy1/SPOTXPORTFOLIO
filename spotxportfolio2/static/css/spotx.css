@@ -1,0 +1,86 @@
+@font-face {
+    font-family: Peachy;
+    src: url('static/font/sugarpeachydemoblack-pkaeg.otf');
+}
+.peachy
+{
+    font-family: Peachy;
+}
+@font-face {
+    font-family: Peachy;
+    src: url('static/font/sugarpeachydemoblack-pkaeg.otf');
+}
+body {
+    background-color: white;
+    backdrop-filter: blur(5px);
+}
+.peachy {
+    font-family: Peachy;
+    font-size: 100px;
+    color: #219C90;
+}
+.sidenav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; 
+    width: 100%; 
+    padding-top: 15px;
+}
+
+.navicon {
+    color:blue; 
+    height: 50px;
+    cursor: pointer;
+}
+.workbox-section {
+    display: none; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+}
+
+.workbox-section.active {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.workbox {
+    padding: 15px;
+    display: inline-block;
+    width: 400px;
+    height: 500px;
+    object-fit: fill;
+    overflow: hidden; 
+}
+
+.workbox img {
+    width: 100%;
+    height: 100%;
+    object-fit: fit;
+    transition: transform 0.5s ease; 
+}
+
+.workbox:hover img {
+    transform: scale(1.1); 
+}
+
+@media (max-width: 768px) {
+    .peachy {
+        font-size: 50px;
+    }
+    .navicon {
+        height: 30px;
+    }
+    .workbox {
+        width: 100%;
+        height: auto;
+    }
+}
+video::-webkit-media-controls {
+    display: none !important;
+}
+
+video::-moz-media-controls {
+    display: none !important;
+}
